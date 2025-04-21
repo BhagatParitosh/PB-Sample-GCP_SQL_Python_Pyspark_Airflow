@@ -2,10 +2,10 @@ CREATE OR REPLACE STORAGE INTEGRATION CS_REAL_TIME_DATA
     TYPE = EXTERNAL_STAGE
     STORAGE_PROVIDER = GCS
     ENABLED = TRUE
-    STORAGE_ALLOWED_LOCATIONS = ('gcs://pb-gcp-snow-bucket-real/click-stream');
+    STORAGE_ALLOWED_LOCATIONS = ('gcs://bucket/folder');
 
 CREATE OR REPLACE STAGE GCP_EXT_STAGE
-    URL = 'gcs://pb-gcp-snow-bucket-real/click-stream'
+    URL = 'gcs://bucket/folder'
     STORAGE_INTEGRATION = CS_REAL_TIME_DATA;
 
 DESC INTEGRATION CS_REAL_TIME_DATA;
