@@ -5,7 +5,7 @@ import datetime
 import json
 
 # Initialize Spark Session
-spark = SparkSession.builder.appName("RetailerMySQLToLanding").getOrCreate()
+spark = SparkSession.builder.appName("MySQLToLanding").getOrCreate()
 
 # Google Cloud Storage (GCS) Configuration
 GCS_BUCKET = "project-bucket"
