@@ -1,5 +1,5 @@
 CREATE OR REPLACE TABLE
-  `gcp-actual-pb.test.test_partition`
+  `partitioned_table`
 PARTITION BY
   DATE(updated_at) AS (
   SELECT
@@ -12,4 +12,4 @@ PARTITION BY
     effective_end_date,
     is_active
   FROM
-    `gcp-actual-pb.silver_dataset.customers`);
+    `non_partitioned_table`);
