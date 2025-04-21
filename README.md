@@ -1,2 +1,2 @@
 # PB-sample-Project
-These are some sample files of the project I was working on recently
+These are some sample codes from the project I was working on recently
